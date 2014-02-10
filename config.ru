@@ -1,10 +1,15 @@
+require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 
-class WebApp < Sinatra::Base
-  get '/' do
-    'Hello, World'
-  end
-end
+require 'sass/plugin/rack'
+require './app'
+
+# use scss for stylesheets
+Sass::Plugin.options[:style] = :compressed
+use Sass::Plugin::Rack
+
+# use coffeescript for js
+use Rack::Coffee, root: 'public', urls: '/javascripts'
 
 run WebApp.new
