@@ -1,0 +1,6 @@
+/.bundle
+/.env
+/.powenv
+/config/database.yml
+tmp/
+*.log
