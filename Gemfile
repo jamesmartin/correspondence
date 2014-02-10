@@ -2,5 +2,5 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 
-gem 'sass'
-gem 'rack-coffee'
+gem 'sinatra-asset-pipeline'
+gem 'haml'

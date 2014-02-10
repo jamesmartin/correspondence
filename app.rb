@@ -1,5 +1,9 @@
+require 'sinatra/asset_pipeline'
+
 class WebApp < Sinatra::Base
+  register Sinatra::AssetPipeline
+
   get '/' do
-    'Hello, World'
+    haml :index
   end
 end
