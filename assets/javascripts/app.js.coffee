@@ -1,3 +1,3 @@
 #= require_tree .
 
-console.log 'hi, from coffee'
+console.log "This log message is brought to you by coffeescript, it's good clean fun."
