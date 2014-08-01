@@ -1,0 +1,104 @@
+/*
+ * Typesetting for a letter to Editorially
+ * Author: James Martin
+ * Date: 2014-02-12
+ * Based on the concept of Modular scales for Web Design:
+ * http://alistapart.com/article/more-meaningful-typography
+ *
+ * This modular scale is double stranded:
+ * Ideal Text Size: 16px (Adobe Garamond readable size)
+ * Significant Measure: 320px (iOS screen width)
+ * http://modularscale.com/scale/?px1=18&px2=320&ra1=1.618&ra2=0
+*/
+
+$base1: 14px;
+$base2: 320px;
+
+$up1: 17.835px;
+$up2: 22.652px;
+$up3: 28.857px;
+$up4: 36.651px;
+$down1: 11.023px;
+
+$belize: #2f18b7;
+$pomegranate: #be3a31;
+html {
+  background: #fbfcfc;
+  height: 100%;
+}
+body {
+  font-family: "adobe-garamond-pro";
+  font-size: $base1; /* Origin of scale */
+  line-height: $up2;
+  color: #364b5f;
+}
+
+em {
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+
+  &:link {
+    color: $pomegranate;
+  }
+  &:visited {
+    color: $pomegranate;
+  }
+  &:hover {
+    color: #3f9cda;
+  }
+  &:active {
+    color: #98a8a9;
+  }
+}
+.container {
+  width: 517.760px;
+  margin: $up4 auto $down1;
+
+  p {
+    margin-top: $down1;
+  }
+
+  .salutation {
+    font-size: $up2;
+    margin-top: $up1;
+    letter-spacing: 1.263px;
+    margin-bottom: $up1;
+  }
+
+  .subhead {
+    font-size: $up1;
+    font-weight: 500;
+    letter-spacing: 1.263px;
+    margin-bottom: $up1;
+  }
+
+  .signoff {
+    margin-top: $up1;
+
+    .sincerely {
+      margin-bottom: $up4;
+    }
+    .name {
+      margin-bottom: $up1;
+    }
+    .contact {
+      display: inline-block;
+      .phone, .name {
+        display: inline-block;
+      }
+
+    }
+  }
+
+  .ps {
+    color: #374c61;
+    margin-top: $up1;
+    font-size: $down1;
+
+    .postscript: {
+    }
+
+  }
+}
