@@ -4,3 +4,4 @@ gem 'sinatra'
 
 gem 'sinatra-asset-pipeline'
 gem 'haml'
+gem 'redcarpet'
