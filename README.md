@@ -1,6 +1,3 @@
-# Prototype Toolbox
+# Correspondence
 
-> Architecture starts when you carefully put two bricks together. There it
-> begins.
-
-— Ludwig Mies van de Rohe
+Wherein James writes to people.
