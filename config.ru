@@ -3,6 +3,6 @@ require 'bundler/setup'
 Bundler.require(:default)
 require 'sinatra/asset_pipeline'
 
-require './app'
+require 'correspondence'
 
-run WebApp.new
+run Correspondence::App
