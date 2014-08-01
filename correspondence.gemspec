@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sinatra", "1.4.4"
   spec.add_dependency "sinatra-asset-pipeline", "0.3.3"
   spec.add_dependency "haml", "4.0.5"
+  spec.add_dependency "redcarpet"
 end
